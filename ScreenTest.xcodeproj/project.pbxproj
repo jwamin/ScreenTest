@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		57C6AB23221B5EF400FB43A4 /* ScreenTestView.h in Headers */ = {isa = PBXBuildFile; fileRef = 57C6AB22221B5EF400FB43A4 /* ScreenTestView.h */; };
-		57C6AB25221B5EF400FB43A4 /* ScreenTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C6AB24221B5EF400FB43A4 /* ScreenTestView.m */; };
+		57C6AB2E221B5F2500FB43A4 /* ScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C6AB2D221B5F2500FB43A4 /* ScreenTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +15,8 @@
 		57C6AB22221B5EF400FB43A4 /* ScreenTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenTestView.h; sourceTree = "<group>"; };
 		57C6AB24221B5EF400FB43A4 /* ScreenTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenTestView.m; sourceTree = "<group>"; };
 		57C6AB26221B5EF400FB43A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57C6AB2C221B5F2500FB43A4 /* ScreenTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScreenTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		57C6AB2D221B5F2500FB43A4 /* ScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +33,7 @@
 		57C6AB15221B5EF400FB43A4 = {
 			isa = PBXGroup;
 			children = (
+				57C6AB2C221B5F2500FB43A4 /* ScreenTest-Bridging-Header.h */,
 				57C6AB21221B5EF400FB43A4 /* ScreenTest */,
 				57C6AB20221B5EF400FB43A4 /* Products */,
 			);
@@ -48,6 +50,7 @@
 		57C6AB21221B5EF400FB43A4 /* ScreenTest */ = {
 			isa = PBXGroup;
 			children = (
+				57C6AB2D221B5F2500FB43A4 /* ScreenTest.swift */,
 				57C6AB22221B5EF400FB43A4 /* ScreenTestView.h */,
 				57C6AB24221B5EF400FB43A4 /* ScreenTestView.m */,
 				57C6AB26221B5EF400FB43A4 /* Info.plist */,
@@ -62,7 +65,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57C6AB23221B5EF400FB43A4 /* ScreenTestView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +100,7 @@
 				TargetAttributes = {
 					57C6AB1E221B5EF400FB43A4 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -133,7 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57C6AB25221B5EF400FB43A4 /* ScreenTestView.m in Sources */,
+				57C6AB2E221B5F2500FB43A4 /* ScreenTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +257,23 @@
 		57C6AB2A221B5EF400FB43A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3C42F7N9CQ;
 				INFOPLIST_FILE = ScreenTest/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.jossy.ScreenTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ScreenTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -268,13 +281,22 @@
 		57C6AB2B221B5EF400FB43A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3C42F7N9CQ;
 				INFOPLIST_FILE = ScreenTest/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.jossy.ScreenTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ScreenTest-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;

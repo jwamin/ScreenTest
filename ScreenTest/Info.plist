@@ -21,6 +21,6 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2019 Joss Manger. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>ScreenTestView</string>
+	<string>ScreenTest.ScreenTest</string>
 </dict>
 </plist>
