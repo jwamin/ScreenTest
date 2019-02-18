@@ -17,6 +17,7 @@
 		57C6AB26221B5EF400FB43A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57C6AB2C221B5F2500FB43A4 /* ScreenTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScreenTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		57C6AB2D221B5F2500FB43A4 /* ScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTest.swift; sourceTree = "<group>"; };
+		57C6AB2F221B67EF00FB43A4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +34,7 @@
 		57C6AB15221B5EF400FB43A4 = {
 			isa = PBXGroup;
 			children = (
+				57C6AB2F221B67EF00FB43A4 /* README.md */,
 				57C6AB2C221B5F2500FB43A4 /* ScreenTest-Bridging-Header.h */,
 				57C6AB21221B5EF400FB43A4 /* ScreenTest */,
 				57C6AB20221B5EF400FB43A4 /* Products */,
