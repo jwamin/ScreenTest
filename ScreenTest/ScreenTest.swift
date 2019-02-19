@@ -41,7 +41,7 @@ class ScreenTest : ScreenSaverView {
         }
     
         os_log("constant %1.5f", constant)
-        
+        self.setNeedsDisplay(self.bounds)
     }
     
     override func draw(_ rect: NSRect) {
@@ -53,7 +53,7 @@ class ScreenTest : ScreenSaverView {
         let circleDimension = self.bounds.height/2;
         
         let centerX = self.bounds.midX - (circleDimension / 2)
-        let centerY = self.constant - (circleDimension / 2) 
+        let centerY = self.constant - (circleDimension / 2)
         
         let point = NSPoint(x: centerX, y: centerY)
         color.setFill()
