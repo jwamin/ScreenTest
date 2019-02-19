@@ -7,18 +7,41 @@
 //
 
 import ScreenSaver
+import os.log
 
 class ScreenTest : ScreenSaverView {
 
     let color = NSColor(calibratedRed: 188.0/255, green: 0, blue: 45.0/255, alpha: 1.0)
     
+    var constant:CGFloat = 0
+    var descending = true
+    
     override init?(frame: NSRect, isPreview: Bool) {
         super.init(frame: frame, isPreview: isPreview)
         self.animationTimeInterval = 1/30
+        constant = self.bounds.midY
     }
     
     required init?(coder decoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func animateOneFrame() {
+        super.animateOneFrame()
+        if(descending){
+            constant = constant + 1
+        } else {
+            constant = constant - 1
+        }
+        
+        if(constant<=0){
+            descending = true
+        } else if (constant>self.bounds.midY){
+            descending = false
+        }
+    
+        os_log("constant %1.5f", constant)
+        
     }
     
     override func draw(_ rect: NSRect) {
@@ -30,7 +53,7 @@ class ScreenTest : ScreenSaverView {
         let circleDimension = self.bounds.height/2;
         
         let centerX = self.bounds.midX - (circleDimension / 2)
-        let centerY = self.bounds.midY - (circleDimension / 2)
+        let centerY = self.constant - (circleDimension / 2) 
         
         let point = NSPoint(x: centerX, y: centerY)
         color.setFill()
