@@ -13,6 +13,7 @@
 
 /* Begin PBXFileReference section */
 		3D73F3DB22204ADE009C457E /* JapanFlag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JapanFlag.swift; sourceTree = "<group>"; };
+		3D73F3DD222066D1009C457E /* panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panel.png; sourceTree = "<group>"; };
 		57C6AB1F221B5EF400FB43A4 /* ScreenTest.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenTest.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		57C6AB22221B5EF400FB43A4 /* ScreenTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenTestView.h; sourceTree = "<group>"; };
 		57C6AB24221B5EF400FB43A4 /* ScreenTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenTestView.m; sourceTree = "<group>"; };
@@ -37,6 +38,7 @@
 			isa = PBXGroup;
 			children = (
 				57C6AB2F221B67EF00FB43A4 /* README.md */,
+				3D73F3DD222066D1009C457E /* panel.png */,
 				57C6AB2C221B5F2500FB43A4 /* ScreenTest-Bridging-Header.h */,
 				57C6AB21221B5EF400FB43A4 /* ScreenTest */,
 				57C6AB20221B5EF400FB43A4 /* Products */,
