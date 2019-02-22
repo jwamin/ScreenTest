@@ -34,10 +34,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D73F3DE22206753009C457E /* Objective-C (For Reference) */ = {
+			isa = PBXGroup;
+			children = (
+				57C6AB24221B5EF400FB43A4 /* ScreenTestView.m */,
+				57C6AB22221B5EF400FB43A4 /* ScreenTestView.h */,
+			);
+			path = "Objective-C (For Reference)";
+			sourceTree = "<group>";
+		};
 		57C6AB15221B5EF400FB43A4 = {
 			isa = PBXGroup;
 			children = (
 				57C6AB2F221B67EF00FB43A4 /* README.md */,
+				3D73F3DE22206753009C457E /* Objective-C (For Reference) */,
 				3D73F3DD222066D1009C457E /* panel.png */,
 				57C6AB2C221B5F2500FB43A4 /* ScreenTest-Bridging-Header.h */,
 				57C6AB21221B5EF400FB43A4 /* ScreenTest */,
@@ -58,8 +68,6 @@
 			children = (
 				57C6AB2D221B5F2500FB43A4 /* ScreenTest.swift */,
 				3D73F3DB22204ADE009C457E /* JapanFlag.swift */,
-				57C6AB22221B5EF400FB43A4 /* ScreenTestView.h */,
-				57C6AB24221B5EF400FB43A4 /* ScreenTestView.m */,
 				57C6AB26221B5EF400FB43A4 /* Info.plist */,
 			);
 			path = ScreenTest;
