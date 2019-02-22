@@ -11,7 +11,7 @@ import os.log
 
 final class ScreenTest : ScreenSaverView {
 
-    private let grey = NSColor.ezColor(r: 244, g: 244, b: 244);
+    private static let grey = NSColor.ezColor(r: 244, g: 244, b: 244);
     
     private let colors = [
         grey,
